@@ -18,6 +18,7 @@ var (
 
 func main() {
 	method1()
+	method()
 }
 
 func method1() {
@@ -45,4 +46,11 @@ func method3() (a int, b string) {
 
 func method4() (a int, b string) {
 	return
+}
+
+func method() {
+	var k, l, m int = 1, 2, 3
+	var n, o, p int
+	q, r, s := 1, 2, "test"
+	fmt.Println(k, l, m, n, o, p, q, r, s)
 }
