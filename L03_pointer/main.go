@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// var p1 *int
 	// var p2 *string
@@ -18,4 +20,16 @@ func main() {
 	// fmt.Println(*p1 == i)
 	// *p1 = 3
 	// fmt.Println(i)
+	a := 2
+	var p *int
+	fmt.Println(&a)
+	p = &a
+	fmt.Println(p, &a)
+
+	pp := &p
+	fmt.Println(pp, p)
+	**pp = 3
+	fmt.Println(pp, *pp, p)
+	fmt.Println(**pp, *p)
+	fmt.Println(a, &a)
 }
